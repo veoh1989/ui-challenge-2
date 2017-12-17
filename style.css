@@ -197,3 +197,23 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/*button*/
+.buttontext {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 10% 0% 2% 0%;
+    padding: 1% 0% 3% 0%;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+}
