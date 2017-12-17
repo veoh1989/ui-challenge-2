@@ -110,6 +110,38 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
     background-size: contain;
 }
 
+/*second checkbox*/
+.container2 {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    left:10%;
+}
+
+.container2 input {
+    position: absolute;
+    opacity: 0;
+}
+
+.container2 input:checked ~ .checkmark {
+    background-image: url(checkboxbutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container2 input:not(:checked) ~ .checkmark {
+    background-image: url(checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 /* radio */
 
 .radiotext {
@@ -136,6 +168,30 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
 }
 
 .container input:not(:checked) ~ .radiobutton {
+    background-image: url(radio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* second radio*/
+
+.radiobutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.container2 input:checked ~ .radiobutton {
+    background-image: url(radiobutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container2 input:not(:checked) ~ .radiobutton {
     background-image: url(radio.png);
     background-position: center;
     background-repeat: no-repeat;
