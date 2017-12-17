@@ -46,12 +46,14 @@ input {
 input:focus {
     outline: 0;
     background: white;
+    border: 1px solid red;
 }
       
 input:valid {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 20px 20px;
+    border: 1px solid black;
 }
 
 input:invalid:focus:not(:placeholder-shown) ~ .requirements {
