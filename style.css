@@ -28,8 +28,9 @@ h4 {
 .text {
     font-weight: bold;
     font-size: 3vw;
-    
 }
+
+/* form input */
 
 form {
     display: inline-block;
@@ -69,4 +70,74 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
     overflow: hidden;
     color: red;
     font-style: italic;
+}
+
+/* check box */
+
+.container {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.container input:checked ~ .checkmark {
+    background-image: url(checkboxbutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container input:not(:checked) ~ .checkmark {
+    background-image: url(checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* radio */
+
+.radiotext {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 10% 0% 2% 0%;
+    padding: 1% 0% 3% 0%;
+}
+
+.radiobutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.container input:checked ~ .radiobutton {
+    background-image: url(radiobutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container input:not(:checked) ~ .radiobutton {
+    background-image: url(radio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
