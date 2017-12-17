@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#303030;
+    margin: 5% 10% 5% 10%;
+}
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 3vw;
+    font-style: italic;
+    display: inline;
+}
+
+.donot {
+    font-weight: bold;
+    font-style:italic;
+    font-size: 3vw;
+    display: inline;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 3vw;
+    
+}
+
+form {
+    display: inline-block;
+}
+
+input {
+    margin: auto;
+    padding: 10px;
+    font-size: 3vw;
+    border: 1px solid black;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
