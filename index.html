@@ -17,9 +17,14 @@
     <form>
         <p><label class="text">text input</label></p>
         <input name="name" type="text" placeholder="placeholder text" min="0"/>
-    <p><label class="text">text input w/validation error</label></p>
-    <input name="name" type="text" placeholder="placeholder text" min="0"/>
-</form>
+        <p><label class="text">text input w/validation error</label></p>
+        <div>
+            <input type="password" id="password" name="password" required placeholder="placeholder text" pattern="(?=.*[a-z])(?=.*[A-Z]).{6,10}" />
+            <div class="requirements">
+              please enter valid username
+            </div>
+          </div>
+    </form>
     <!-- add strech goals shit -->
     <p class="text">checkbox</p>
     <!-- add checkbox -->
