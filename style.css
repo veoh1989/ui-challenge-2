@@ -204,16 +204,42 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
     font-weight: bold;
     font-size: 3vw;
     margin: 10% 0% 2% 0%;
-    padding: 1% 0% 3% 0%;
 }
 
 .button {
-    background-color: black;
-    border: none;
+    background-color: #999;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 3% 6% 3% 6%;
+}
+
+.button:hover {
+    background-color:#303030;
+    color: white;
+    font-weight: bold;
+}
+
+.button2 {
+    background-color: #303030;
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline;
+    display: inline-block;
     font-size: 3vw;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 3% 6% 3% 6%;
+    position: relative;
+    left:3%;
+}
+
+.button2:hover {
+    background-color:#999;
+    color: black;
+    font-weight: bold;
 }
