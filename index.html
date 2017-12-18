@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>UI 2</title>
+</head>
+<body>
+    <header>
+        <h1>UI Challenge - Custom Form Elements</h1>
+        <h4>NOTE: <div class="donot">DO NOT</div> aorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, saepe? Libero pariatur ullam ex, aliquam ut exercitationem placeat eos similique, vel nam non minus illum nesciunt fugiat perferendis eum consequuntur.</h4>
+    </header>
+    <form>
+        <p><label class="text">text input</label></p>
+        <input name="name" type="text" placeholder="placeholder text" min="0"/>
+        <p><label class="text">text input w/validation error</label></p>
+        <input type="password" id="password" name="password" required placeholder="placeholder text" pattern="(?=.*[a-z])(?=.*[A-Z]).{6,10}" required/>
+        <div class="requirements"> please enter valid username</div>
+    </form>
+    <p class="text">checkbox</p>
+    <label class="container">
+    <input type="checkbox" checked="checked">
+    <div class="checkmark"></div>
+    </label>
+    <label class="container2">
+    <input type="checkbox" checked="checked">
+    <div class="checkmark"></div>
+    </label>
+    <p class="radiotext">radio</p>
+    <label class="container">
+    <input type="checkbox" checked="checked">
+    <div class="radiobutton"></div>
+    </label>
+    <label class="container2">
+    <input type="checkbox" checked="checked">
+    <div class="radiobutton"></div>
+    </label>
+    <p class="buttontext">buttons</p>
+    <button class="button">Submit</button>
+</body>
+</html>

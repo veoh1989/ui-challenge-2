@@ -1,0 +1,219 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#303030;
+    margin: 5% 10% 5% 10%;
+}
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 3vw;
+    font-style: italic;
+    display: inline;
+}
+
+.donot {
+    font-weight: bold;
+    font-style:italic;
+    font-size: 3vw;
+    display: inline;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+/* form input */
+
+form {
+    display: inline-block;
+}
+
+input {
+    margin: auto;
+    padding: 2% 55% 2% 2%;
+    font-size: 3vw;
+    border: 1px solid black;
+    display: inline-block;
+} 
+
+input:focus {
+    outline: 0;
+    background: white;
+    border: 1px solid red;
+}
+      
+input:valid {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    border: 1px solid black;
+}
+
+input:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 200px;
+    padding: 0 20px 20px 100px;
+}   
+    
+.requirements {
+    padding: 0 20px 0 50px;
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+}
+
+/* check box */
+
+.container {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.container input:checked ~ .checkmark {
+    background-image: url(checkboxbutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container input:not(:checked) ~ .checkmark {
+    background-image: url(checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*second checkbox*/
+.container2 {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    left:10%;
+}
+
+.container2 input {
+    position: absolute;
+    opacity: 0;
+}
+
+.container2 input:checked ~ .checkmark {
+    background-image: url(checkboxbutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container2 input:not(:checked) ~ .checkmark {
+    background-image: url(checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* radio */
+
+.radiotext {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 10% 0% 2% 0%;
+    padding: 1% 0% 3% 0%;
+}
+
+.radiobutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.container input:checked ~ .radiobutton {
+    background-image: url(radiobutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container input:not(:checked) ~ .radiobutton {
+    background-image: url(radio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* second radio*/
+
+.radiobutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.container2 input:checked ~ .radiobutton {
+    background-image: url(radiobutton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container2 input:not(:checked) ~ .radiobutton {
+    background-image: url(radio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*button*/
+.buttontext {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 10% 0% 2% 0%;
+    padding: 1% 0% 3% 0%;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+}
