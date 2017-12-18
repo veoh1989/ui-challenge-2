@@ -32,7 +32,7 @@ h4 {
 
 /* form input */
 
-form {
+.form {
     display: inline-block;
 }
 
@@ -221,7 +221,6 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
 .button:hover {
     background-color:#303030;
     color: white;
-    font-weight: bold;
 }
 
 .button2 {
